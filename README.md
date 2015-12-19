@@ -1,6 +1,8 @@
 # phoenix-ejabberd-jwt
 A sample showing Phoenix registration/auth against Postgres along with eJabbred reg/auth via a JWT.
 
+You should follow https://github.com/ParamountVentures/ejabberd-auth-jwt to prepare the JWT side.
+
 1. Install eJabberd. 
 2. Install Postgres and create a users table as below.
 
