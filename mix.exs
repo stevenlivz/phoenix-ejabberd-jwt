@@ -36,7 +36,8 @@ defmodule Auth.Mixfile do
      {:phoenix_html, "~> 2.1"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:comeonin, "~> 1.0"},
-     {:cowboy, "~> 1.0"}]
+     {:cowboy, "~> 1.0"},
+     {:joken, "~> 1.0"}]
   end
 
   # Aliases are shortcut or tasks specific to the current project.

@@ -1,6 +1,14 @@
+<input type='text' id='to' size="20" placeholder="to">
+<input type='text' id='message' size="20" placeholder="message">
+<input type='button' id='send' value='send' onclick='sendMessage()'>
+<br/><br/>
 <div class="jumbotron">
-  <h2>Welcome to Phoenix!</h2>
-  <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
+  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js'></script>
+  <script>var JWT = '<%= Plug.Conn.get_session(@conn, :token) %>';var USER = '<%= Plug.Conn.get_session(@conn, :current_email) %>@alchemy.local';</script>
+  <script src='<%= static_path(@conn, "/js/strophe.min.js") %>'></script>
+  <script src='<%= static_path(@conn, "/js/chat.js") %>'></script>
+
+  <div id='log'></div>
 </div>
 
 <div class="row marketing">
