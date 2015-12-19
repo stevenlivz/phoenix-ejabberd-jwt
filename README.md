@@ -5,6 +5,19 @@ A sample showing Phoenix registration/auth against Postgres along with eJabbred 
 2. Install Postgres and create a users table as below.
 
 ```
+-- Sequence: public.users_id_seq
+
+-- DROP SEQUENCE public.users_id_seq;
+
+CREATE SEQUENCE public.users_id_seq
+  INCREMENT 1
+  MINVALUE 1
+  MAXVALUE 9223372036854775807
+  START 4
+  CACHE 1;
+ALTER TABLE public.users_id_seq
+  OWNER TO postgres;
+
 -- Table: public.users
 
 -- DROP TABLE public.users;
